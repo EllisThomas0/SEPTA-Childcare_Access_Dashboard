@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb+srv://ethomas2:jKFf8pYKYZerXCVD@etbuscluster.fj6tntd.mongodb.net/ThesisData?retryWrites=true&w=majority');
+mongoose.connect(mongoCnxnLiteral);
 
 var Schema = mongoose.Schema;
 
