@@ -268,9 +268,7 @@ function degreesToRadians(degrees) {
     return degrees * (Math.PI / 180);
 }
 
-/*************************************************
-Do not change anything below here!
-*************************************************/
+/Do Not Change below here! It works now
 
 app.use('/public', express.static('public'));
 
