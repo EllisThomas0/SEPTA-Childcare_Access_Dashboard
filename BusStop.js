@@ -1,20 +1,5 @@
 var mongoose = require('mongoose');
-
-// DO NOT CHANGE THE URL FOR THE DATABASE!
-// Please speak to the instructor if you need to do so or want to create your own instance
-mongoose.connect('mongodb+srv://ethomas2:jKFf8pYKYZerXCVD@etbuscluster.fj6tntd.mongodb.net/ThesisData?retryWrites=true&w=majority');
-
-// mongoose.connect('mongodb+srv://ethomas2:jKFf8pYKYZerXCVD@etbuscluster.fj6tntd.mongodb.net/?retryWrites=true&w=majority').
-//   catch(error => handleError(error));
-
-// try {
-//     // await
-//     mongoose.connect('mongodb+srv://ethomas2:jKFf8pYKYZerXCVD@etbuscluster.fj6tntd.mongodb.net/?retryWrites=true&w=majority');
-//   } catch (error) {
-//     // handleError(error);
-//     console.log("connection error");
-//   }
-
+mongoose.connect(mongoCnxnLiteral);
 var Schema = mongoose.Schema;
 
 var busStopSchema = new Schema({
